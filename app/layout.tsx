@@ -13,8 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className="bg-slate-200 h-lvh">
-        <header className="container">
+      <body className="bg-slate-200 h-lvh ">
+      
+        <header className="bg-black">
         <h1 
         className="text-cyan-500 italic font-semibold text-2xl tracking-tighter p-2"
         ><span className="text-amber-600 not-italic font-bold">H. Meneceur</span> Developpeur Web Freelance</h1>

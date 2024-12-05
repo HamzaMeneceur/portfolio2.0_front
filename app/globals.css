@@ -19,3 +19,7 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+.theme{
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 8%, rgba(246,143,2,1) 70%, rgba(255,255,255,0) 100%); 
+}

@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc/generated-native";
 import type { Config } from "tailwindcss";
 
 const config = {
@@ -9,7 +10,7 @@ const config = {
   theme: {
     extend: {
       animation: {
-        "spin-shadow": "spin-shadow 1.5s linear infinite",
+        "spin-shadow": "spin-shadow 1.4s linear infinite",
         "vroom-yellow": "vroom-yellow 10s linear infinite"
       },
       colors: {
