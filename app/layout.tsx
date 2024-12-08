@@ -17,8 +17,8 @@ export default function RootLayout({
       
         <header className="bg-black">
         <h1 
-        className="text-cyan-500 italic font-semibold text-2xl tracking-tighter p-2"
-        ><span className="text-amber-600 not-italic font-bold">H. Meneceur</span> Developpeur Web Freelance</h1>
+        className="text-cyan-500 italic font-semibold md:text-7xl tracking-tighter p-2 push-on-hover"
+        ><span className="text-amber-600 not-italic font-bold">Hamza Meneceur</span> <br />Developpeur Web Freelance</h1>
         </header>
         {children}
         

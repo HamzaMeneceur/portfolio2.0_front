@@ -23,3 +23,13 @@ body {
   background: rgb(0,0,0);
   background: linear-gradient(180deg, rgba(0,0,0,1) 8%, rgba(246,143,2,1) 70%, rgba(255,255,255,0) 100%); 
 }
+
+.push-on-hover {
+  display: inline-block; /* Nécessaire pour que transform fonctionne correctement */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation fluide */
+}
+
+.push-on-hover:hover {
+  transform: translateX(10px); /* Déplace l'élément horizontalement */
+  box-shadow: 3px 3px 8px rgba(248, 247, 247, 0.2); /* Optionnel : ajoute une ombre pour plus d'effet */
+}
