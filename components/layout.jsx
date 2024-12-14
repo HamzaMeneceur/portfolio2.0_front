@@ -6,10 +6,15 @@ export default function Dynamic() {
     const [letters, setLetters] = useState([]);
   
     useEffect(() => {
-        const text = "Hamza Meneceur"
-        const spanFirst = "Hamza Meneceur";
-        const spanSecond = "Developpeur Web Freelance"
-        setLetters(text.split(""))
+        const text = 
+        [
+          "Hamza Meneceur","Developpeur Web Freelance"
+        ];
+        setLetters(text);
+        for(element of letters){
+          console.log(element[0])
+        }
+        console.log(letters)
         /**
          * soucis avec la dépendance :
          * Profondeur maximale de mise à jour dépassée. Cela peut se produire lorsqu'un composant
@@ -32,15 +37,7 @@ export default function Dynamic() {
                 {letter === " " ? "\u00A0" : letter}
               </span>
             ))}
-          {
-            letters.map((letter, index) => (
-              <span
-              key={index}
-              className="push-on-hover text-cyan-500 italic font-semibold md:text-4xl tracking-tighter p-2"
-              >
-                {letter === " " ? "\u00A0" :  letter}
-              </span>
-          ))}
+          
       
     </h1>
         
