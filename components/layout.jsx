@@ -11,9 +11,7 @@ export default function Dynamic() {
           "Hamza Meneceur","Developpeur Web Freelance"
         ];
         setLetters(text);
-        for(element of letters){
-          console.log(element[0])
-        }
+        letters.forEach((element) => console.log(element))
         console.log(letters)
         /**
          * soucis avec la dépendance :
