@@ -11,8 +11,7 @@ export default function Dynamic() {
           "Hamza Meneceur","Developpeur Web Freelance"
         ];
         setLetters(text);
-        letters.forEach((element) => console.log(element))
-        console.log(letters)
+
         /**
          * soucis avec la dépendance :
          * Profondeur maximale de mise à jour dépassée. Cela peut se produire lorsqu'un composant
@@ -32,7 +31,7 @@ export default function Dynamic() {
               key={index}
               className="push-on-hover text-amber-600 not-italic font-bold"
               >
-                {letter === " " ? "\u00A0" : letter}
+                {letter === " " ? "\u00A0" : console.log("ici ", letter[1].split(""))}
               </span>
             ))}
           
