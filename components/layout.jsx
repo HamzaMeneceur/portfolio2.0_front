@@ -3,35 +3,42 @@
 import { useEffect, useState } from "react";
 
 export default function Dynamic() {
-    const [letters, setLetters] = useState([]);
-  
+    const [spanArray, setSpan] = useState([]);
+    const [nameArray, setName] = useState([])
     useEffect(() => {
         const text = 
-        [
-          "Hamza Meneceur","Developpeur Web Freelance"
-        ];
-        setLetters(text);
+        "Développeur Web Freelance"
+        const name =
+        "Hamza Meneceur"
+        setSpan(text.split(""));
+        setName(name.split(""))
+ // Je voudrais pouvoir séléctionner un élément du tableau en utilisant [0] | [1]
+ // est ainsi pouvoir utiliser deux span sur mon titre pour afficher premiere élément et second avec des police d'écriture diférrente
 
-        /**
-         * soucis avec la dépendance :
-         * Profondeur maximale de mise à jour dépassée. Cela peut se produire lorsqu'un composant
-         * appelle "setState" à l'intérieur de "useEffect", mais que "useEffect" n'a pas de tableau de
-         * dépendances, ou qu'une des dépendances change à chaque rendu.
-         * */  
-        
     }, []);
  
 
     return (
         
-        <h1>
+        <h1 className="text-cyan-500 italic font-semibold md:text-7xl p-2 tracking-tighter">
           {
-            letters.map((letter, index) => (
-              <span 
+            nameArray.map((letter, index) =>(
+              <span
               key={index}
               className="push-on-hover text-amber-600 not-italic font-bold"
               >
-                {letter === " " ? "\u00A0" : console.log("ici ", letter[1].split(""))}
+                {letter === " " ? "\u00A0" : letter}
+              </span>
+            ))
+          }
+          <br />
+          {
+            spanArray.map((letter, index) => (
+              <span 
+              key={index}
+              className="push-on-hover"
+              >
+                {letter === " " ? "\u00A0" : letter}
               </span>
             ))}
           

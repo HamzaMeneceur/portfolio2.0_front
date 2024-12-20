@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image'
-export default function Home() {
+export default function Page() {
   return (
     <>
    
@@ -13,23 +12,17 @@ export default function Home() {
         <p 
         className="tracking-wide text-black text-center flex flex-col items-center justify-between h-[500px] p-4"
         >
-          <span className="font-bold tracking-widest">Bienvenue sur mon portfolio professionnel !</span> <span> Je suis ravi de vous accueillir dans cet espace dédié 
-          à mes réalisations, mes compétences et ma passion pour le développement web. <br />Vous y découvrirez mes projets, 
-          reflétant mon expertise et ma créativité dans la conception de solutions numériques sur mesure. </span> 
-          <span> N&apos;hésitez pas à explorer les différentes sections 
-          pour en savoir plus sur mon parcours, mes collaborations et mes inspirations. 
-          <br />Si mon travail suscite votre intérêt, je serais enchanté d&apos;échanger avec vous pour discuter de vos idées ou besoins. </span> NextJs
+          <span className="font-bold tracking-widest">Salut à toi !</span> <span> Moi, c’est Hamza, développeur freelance passionné par le code, 
+            les projets qui sortent de l’ordinaire et les belles idées. <br />Je jongle avec les lignes de code pour donner vie à des sites web, 
+            des applications et des outils sur mesure qui font vraiment la diff’.</span> 
+          <span> Que ce soit pour créer un site vitrine qui en jette, développer une appli qui répond à des besoins bien spécifiques ou optimiser un projet existant, 
+            je suis toujours partant pour relever le défi. Mon but ? Allier technique et créativité pour te proposer des solutions qui te ressemblent.
+          <br />Mon approche, c’est simple : je préfère les relations humaines, la transparence et le boulot bien fait. 
+          Pas de jargon compliqué ou de promesses intenables ici, juste des échanges clairs, un vrai engagement, et une collaboration au top. </span> Si tu as un projet en tête ou juste envie de discuter, 
+          je suis toujours à l’écoute. <br />Alors, on s’y met ?
         </p>
 
         </div>
-        <Image 
-       src="/vroom-test.png" 
-       alt="Voiture" 
-       width={150}
-       height={150}
-       className='absolute bottom-0 animate-vroom-yellow'
-       />
-       
       </main>
       <footer className="relative z-10">
 <div className="pt-5 bg-black text-white h-[400px] grid grid-cols-2 max-[695px]:text-sm">
