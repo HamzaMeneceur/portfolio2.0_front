@@ -1,34 +1,9 @@
 import Link from 'next/link';
-import Image from 'next/image'
 export default function Home() {
   return (
     <>
-   
-    
       <main className="grid place-content-center h-screen relative theme z-10">
-        <div 
-        className=
-        "flex justify-center bg-slate-200 items-center rounded-md box-border md:h-[500px] md:w-[600px] border-2 border-solid border-cyan-500 shadow-lg animate-spin-shadow"
-        >
-        <p 
-        className="tracking-wide text-black text-center flex flex-col items-center justify-between h-[500px] p-4"
-        >
-          <span className="font-bold tracking-widest">Bienvenue sur mon portfolio professionnel !</span> <span> Je suis ravi de vous accueillir dans cet espace dédié 
-          à mes réalisations, mes compétences et ma passion pour le développement web. <br />Vous y découvrirez mes projets, 
-          reflétant mon expertise et ma créativité dans la conception de solutions numériques sur mesure. </span> 
-          <span> N&apos;hésitez pas à explorer les différentes sections 
-          pour en savoir plus sur mon parcours, mes collaborations et mes inspirations. 
-          <br />Si mon travail suscite votre intérêt, je serais enchanté d&apos;échanger avec vous pour discuter de vos idées ou besoins. </span> NextJs
-        </p>
-
-        </div>
-        <Image 
-       src="/vroom-test.png" 
-       alt="Voiture" 
-       width={150}
-       height={150}
-       className='absolute bottom-0 animate-vroom-yellow'
-       />
+        
        
       </main>
       <footer className="relative z-10">

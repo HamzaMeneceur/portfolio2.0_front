@@ -1,5 +1,5 @@
-import Dynamic from '../components/layout'
 import type { Metadata } from "next";
+import Image from 'next/image';
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -19,8 +19,13 @@ export default function RootLayout(
   return (
     <html lang="fr">
       <body className="bg-slate-200 h-lvh ">
-        <header className="bg-black">
-        <Dynamic />
+        <header>
+        <Image
+        width={200}
+        height={200}
+        src="/hamza-meneceur-logo.svg"
+        alt="Logo de ce site représentant les balise de code et en dessous le nom et prénom du créateur de ce projet"
+        ></Image>
         </header>
         {children}
       </body>
