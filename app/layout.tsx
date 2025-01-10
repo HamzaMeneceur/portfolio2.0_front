@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from 'next/image';
 import "./globals.css";
-
+import Navigate from "../component/navbar";
 export const metadata: Metadata = {
   title: "Le portfolio de Hamza Meneceur",
   description: "Développeur freelance",
@@ -20,6 +20,7 @@ export default function RootLayout(
     <html lang="fr">
       <body className="bg-slate-200 h-lvh ">
         <header>
+        <Navigate />
         <Image
         width={200}
         height={200}
