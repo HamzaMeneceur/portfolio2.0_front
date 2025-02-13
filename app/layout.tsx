@@ -1,7 +1,7 @@
+
 import type { Metadata } from "next";
-import Image from 'next/image';
 import "./globals.css";
-import Navigate from "../component/navbar";
+import NavigationBar from "../component/navbar";
 export const metadata: Metadata = {
   title: "Le portfolio de Hamza Meneceur",
   description: "Développeur freelance",
@@ -18,15 +18,10 @@ export default function RootLayout(
 }) {
   return (
     <html lang="fr">
-      <body className="bg-slate-200 h-lvh ">
+      <body >
         <header>
-        <Navigate />
-        <Image
-        width={200}
-        height={200}
-        src="/hamza-meneceur-logo.svg"
-        alt="Logo de ce site représentant les balise de code et en dessous le nom et prénom du créateur de ce projet"
-        ></Image>
+        <NavigationBar />
+        
         </header>
         {children}
       </body>
@@ -39,5 +34,11 @@ export default function RootLayout(
 
         className="text-cyan-500 italic font-semibold md:text-7xl p-2 tracking-tighter "
         ><span className="text-amber-600 not-italic font-bold">Hamza Meneceur</span> <br />Developpeur Web Freelance</h1>
-        
+
+        <Image
+        width={200}
+        height={200}
+        src="/hamza-meneceur-logo.svg"
+        alt="Logo de ce site représentant les balise de code et en dessous le nom et prénom du créateur de ce projet"
+        ></Image>
  */
